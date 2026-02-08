@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Unakuthan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background:linear-gradient(120deg,#fff0f6,#ffffff);
+      font-family:'Poppins',sans-serif;
+      overflow:hidden;
+    }
+
+    .final-container{
+      text-align:center;
+      animation:fadeIn 2s ease;
+    }
+
+    .photo{
+      width:180px;
+      height:180px;
+      border-radius:50%;
+      object-fit:cover;
+      box-shadow:0 20px 40px rgba(0,0,0,0.2);
+      margin-bottom:25px;
+      animation:float 4s ease-in-out infinite;
+    }
+
+    h1{
+      font-family:'Dancing Script',cursive;
+      font-size:3.5rem;
+      color:#e75480;
+      margin-bottom:15px;
+    }
+
+    p{
+      font-size:1.2rem;
+      line-height:1.8;
+      color:#444;
+      margin-bottom:25px;
+    }
+    button{
+      text-align:center;
+      padding:30px;
+      color:#e75480;
+      font-size:1rem;
+    }
+
+    .heart{
+      font-size:3rem;
+      color:#e75480;
+      animation:beat 1.6s infinite;
+    }
+
+    .end-text{
+      display:block;
+      margin-top:25px;
+      font-size:.9rem;
+      color:#999;
+      letter-spacing:1px;
+    }
+
+    @keyframes beat{
+      0%,100%{transform:scale(1)}
+      50%{transform:scale(1.3)}
+    }
+
+    @keyframes fadeIn{
+      from{opacity:0;transform:translateY(30px)}
+      to{opacity:1;transform:translateY(0)}
+    }
+
+    @keyframes float{
+      0%,100%{transform:translateY(0)}
+      50%{transform:translateY(-10px)}
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="final-container">
+    <!-- Ava Photo -->
+
+
+    <h1>Unakuthan.</h1>
+
+    <p>
+      Idhu website illa… <br>
+      En manasu.<br><br>
+      Website mudinjalum,<br>
+      Nee en manasula  irukka.
+    </p>
+
+    <div class="heart">❤</div>
+
+    <span class="end-text">
+      Just wanted you to feel this.
+    </span>
+    <div>
+      <h1>  website pahtahthu pothu va next povomaa</h1>
+    <a href="https://bdaycake.com/venkateshkumar_9620"><button class="btn">Va cake cut panalam bby Click pannu</button></a>
+  </div>
+  </div>
+
+</body>
+</html>

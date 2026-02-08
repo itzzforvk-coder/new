@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For You 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+  <style >
+
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+    body{scroll-behavior:smooth;background:#000000;color:#333}
+    section{min-height:100vh;padding:60px 10%}
+    nav{position:fixed;top:0;left:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding:15px 10%;background:rgba(255,255,255,0.8);backdrop-filter:blur(10px);z-index:100}
+    nav a{margin:0 10px;text-decoration:none;color:#e75480;font-weight:600}
+
+    /* HOME */
+    #home{display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(120deg,#ffd6e8,#fff)}
+    #home h1{font-size:3rem;color:#e75480}
+    #home p{margin:20px 0;font-size:1.2rem}
+    .btn{padding:12px 30px;background:#e75480;color:white;border:none;border-radius:30px;cursor:pointer;transition:.3s}
+    .btn:hover{transform:scale(1.1);box-shadow:0 10px 20px rgba(0,0,0,.2)}
+
+    /* MEMORIES */
+    #memories h2{text-align:center;margin-bottom:40px;color:#e75480}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+    .card{position:relative;overflow:hidden;border-radius:20px}
+    .card img{width:100%;height:100%;object-fit:cover;transition:.5s}
+    .card:hover img{transform:scale(1.1);filter:blur(2px)}
+    .overlay{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:white;font-size:1.1rem;background:rgba(231,84,128,.6);opacity:0;transition:.5s;text-align:center;padding:20px}
+    .card:hover .overlay{opacity:1}
+
+    /* TIMELINE */
+    #timeline{background:#fff5f9}
+    #timeline h2{text-align:center;color:#e75480;margin-bottom:40px}
+    .line{max-width:600px;margin:auto}
+    .event{background:white;padding:20px;margin:20px 0;border-left:5px solid #e75480;border-radius:10px;animation:fadeUp 1s}
+
+    /* LETTER */
+    #letter{text-align:center}
+    #letter h2{font-family:'Dancing Script',cursive;font-size:3rem;color:#e75480}
+    #letter p{max-width:700px;margin:40px auto;font-size:1.2rem;line-height:1.8}
+
+    /* SURPRISE */
+    #surprise{display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(120deg,#ffe6f0,#fff)}
+    .cake{font-size:6rem;cursor:pointer;transition:.3s}
+    .cake:hover{transform:scale(1.2)}
+    #msg{margin-top:30px;font-size:2rem;color:#e75480;display:none}
+
+    @keyframes fadeUp{
+      from{opacity:0;transform:translateY(30px)}
+      to{opacity:1;transform:translateY(0)}
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div>💖</div>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#memories">Memories</a>
+    <a href="#timeline">Timeline</a>
+    <a href="#letter">Letter</a>
+    <a href="#surprise">Surprise</a>
+  </div>
+</nav>
+
+<section id="home">
+  <div>
+    <h1>Hey, Lovable Teju💫</h1>
+    <p>This is not just a website.<br>From my heart, My Girl At 20's</p>
+    <p>💖 HAPPY PURANTHANAL💖</p>
+    <a href="#memories"><button class="btn">Enter 💗</button></a>
+  </div>
+</section>
+
+<section id="memories">
+  <h2>Our Memories 📸</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="img1.jpeg" />
+      <div class="overlay">Intha siriupu than alaguu 💕</div>
+    </div>
+    <div class="card">
+      <img src="img5.jpeg" />
+      <div class="overlay">Enooda asaiyana oru pic 💖</div>
+    </div>
+    <div class="card">
+      <img src="img2.jpeg" />
+      <div class="overlay">Forever my favorite memory 🌸</div>
+    </div>
+  </div>
+</section>
+
+<section id="timeline">
+  <h2>Our Journey 🕰️</h2>
+  <div class="line">
+    <div class="event">💫 Kavithai di nee</div>
+    <div class="event">💬Mudiyatha sol pesatha kangal</div>
+    <div class="event">😂 Sandaigal(Everytime)</div>
+    <div class="event">💖 Still choosing you....!!!!</div>
+  </div>
+</section>
+
+<section id="letter">
+  <h2>For You 💌</h2>
+  <p style="color: white;">
+    I may not say this often,<br>
+    but you mean more to me than you know.<br><br>
+    Thank you for being the reason behind my smiles,<br>
+    my comfort, my happiness💕<br><br>
+    Nee Naam iruvar!!!
+  </p>
+</section>
+
+<section id="surprise">
+  <h1>Enna onnu ila nu pakuriya Cake AA thodu di venna</h1>
+  <div class="cake" onclick="showMsg()">🎂</div>
+  <div id="msg">Happy Birthday 💖<br>You are truly special ✨<br>Avolothaa!!! NEXT Page povomaa!! </div>
+  
+</section>
+
+<script>
+  function showMsg(){
+    document.getElementById('msg').style.display='block';
+  }
+</script>
+
+  <div>
+    <a href="DayMeat.html"><button class="btn">Enter 💗</button></a>
+  </div>
+
+</body>
+</html>
